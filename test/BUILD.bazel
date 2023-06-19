@@ -1,0 +1,41 @@
+load("@bazel_gazelle//:def.bzl", "gazelle_binary", "gazelle_generation_test")
+load("@gazelle_python//manifest:defs.bzl", "python_external_modules_manifest")
+load("@pip//:requirements.bzl", "all_whl_requirements")
+load("@rules_python//python:pip.bzl", "compile_pip_requirements")
+
+compile_pip_requirements(
+    name = "requirements",
+    extra_args = [
+        "--allow-unsafe",
+        "--resolver=backtracking",
+    ],
+    requirements_in = "requirements.in",
+    requirements_txt = "requirements.txt",
+)
+
+python_external_modules_manifest(
+    name = "external_modules",
+    exclude_patterns = [
+        "^_|(\\._)+",
+    ],
+    wheels = all_whl_requirements,
+)
+
+gazelle_binary(
+    name = "gazelle_binary",
+    languages = [
+        "@gazelle_python//python",
+    ],
+)
+
+gazelle_generation_test(
+    name = "gazelle_test",
+    gazelle_binary = ":gazelle_binary",
+    test_data = glob(
+        include = ["**"],
+        exclude = [
+            "*",
+            "bazel-*/**",
+        ],
+    ),
+)

@@ -1,0 +1,18 @@
+load("@rules_python//python:defs.bzl", "py_binary", "py_library")
+
+py_library(
+    name = "new_mod1",
+    srcs = ["new_mod1.py"],
+    imports = ".",
+    tags = ["py-gazelle-managed"],
+    visibility = ["//visibility:public"],
+)
+
+py_binary(
+    name = "new_mod2",
+    srcs = ["new_mod2.py"],
+    imports = ".",
+    main = "new_mod2.py",
+    tags = ["py-gazelle-managed"],
+    visibility = ["//visibility:public"],
+)

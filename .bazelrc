@@ -1,0 +1,3 @@
+build --noexperimental_convenience_symlinks
+build --incompatible_strict_action_env
+

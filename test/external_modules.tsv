@@ -1,0 +1,77 @@
+# GENERATED FILE - DO NOT EDIT!
+# Users can record extra comments on top.
+certifi	certifi		py
+certifi	certifi	__main__	py
+certifi	certifi	core	py
+charset_normalizer	charset_normalizer		py
+charset_normalizer	charset_normalizer	api	py
+charset_normalizer	charset_normalizer	cd	py
+charset_normalizer	charset_normalizer	constant	py
+charset_normalizer	charset_normalizer	legacy	py
+charset_normalizer	charset_normalizer	md	py
+charset_normalizer	charset_normalizer	md	so
+charset_normalizer	charset_normalizer	md__mypyc	so
+charset_normalizer	charset_normalizer	models	py
+charset_normalizer	charset_normalizer	utils	py
+charset_normalizer	charset_normalizer	version	py
+charset_normalizer	charset_normalizer.assets		py
+charset_normalizer	charset_normalizer.cli		py
+charset_normalizer	charset_normalizer.cli	normalizer	py
+idna	idna		py
+idna	idna	codec	py
+idna	idna	compat	py
+idna	idna	core	py
+idna	idna	idnadata	py
+idna	idna	intranges	py
+idna	idna	package_data	py
+idna	idna	uts46data	py
+requests	requests		py
+requests	requests	__version__	py
+requests	requests	_internal_utils	py
+requests	requests	adapters	py
+requests	requests	api	py
+requests	requests	auth	py
+requests	requests	certs	py
+requests	requests	compat	py
+requests	requests	cookies	py
+requests	requests	exceptions	py
+requests	requests	help	py
+requests	requests	hooks	py
+requests	requests	models	py
+requests	requests	packages	py
+requests	requests	sessions	py
+requests	requests	status_codes	py
+requests	requests	structures	py
+requests	requests	utils	py
+urllib3	urllib3		py
+urllib3	urllib3	_base_connection	py
+urllib3	urllib3	_collections	py
+urllib3	urllib3	_request_methods	py
+urllib3	urllib3	_version	py
+urllib3	urllib3	connection	py
+urllib3	urllib3	connectionpool	py
+urllib3	urllib3	exceptions	py
+urllib3	urllib3	fields	py
+urllib3	urllib3	filepost	py
+urllib3	urllib3	poolmanager	py
+urllib3	urllib3	response	py
+urllib3	urllib3.contrib		py
+urllib3	urllib3.contrib	pyopenssl	py
+urllib3	urllib3.contrib	securetransport	py
+urllib3	urllib3.contrib	socks	py
+urllib3	urllib3.contrib._securetransport		py
+urllib3	urllib3.contrib._securetransport	bindings	py
+urllib3	urllib3.contrib._securetransport	low_level	py
+urllib3	urllib3.util		py
+urllib3	urllib3.util	connection	py
+urllib3	urllib3.util	proxy	py
+urllib3	urllib3.util	request	py
+urllib3	urllib3.util	response	py
+urllib3	urllib3.util	retry	py
+urllib3	urllib3.util	ssl_	py
+urllib3	urllib3.util	ssl_match_hostname	py
+urllib3	urllib3.util	ssltransport	py
+urllib3	urllib3.util	timeout	py
+urllib3	urllib3.util	url	py
+urllib3	urllib3.util	util	py
+urllib3	urllib3.util	wait	py

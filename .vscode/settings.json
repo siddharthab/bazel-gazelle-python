@@ -1,0 +1,19 @@
+{
+  "bazel.enableCodeLens": true,
+  "editor.defaultFormatter": "trunk.io",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.trunk/*out": true,
+    "**/bazel-*": true
+  },
+  "files.watcherExclude": {
+    "**/.trunk/*out": true,
+    "**/bazel-*": true
+  },
+  "git.branchProtection": ["main"],
+  "trunk.autoInit": true,
+  "trunk.trunkGrayOutNonBlockingIssues": true,
+  "trunk.trunkPath": "tools/trunk"
+}

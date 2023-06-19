@@ -1,0 +1,40 @@
+load("@rules_python//python:defs.bzl", "py_library")
+
+py_library(
+    name = "pkg1",
+    srcs = [
+        "__init__.py",
+        "foo.py",
+    ],
+    imports = "..",
+    tags = ["py-gazelle-managed"],
+    visibility = ["//visibility:public"],
+    deps = ["@pip_requests//:pkg"],
+)
+
+py_library(
+    name = "bar",
+    srcs = [
+        "bar.py",
+        "foo.py",
+    ],
+    imports = "..",
+    tags = ["py-gazelle-managed"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//python/pkg1",
+        "@pip_requests//:pkg",
+    ],
+)
+
+py_library(
+    name = "foo",
+    srcs = ["foo.py"],
+    imports = "..",
+    tags = ["py-gazelle-managed"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//python/pkg1",
+        "@pip_requests//:pkg",
+    ],
+)

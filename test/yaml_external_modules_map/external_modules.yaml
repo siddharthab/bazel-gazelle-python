@@ -1,0 +1,6 @@
+manifest:
+  modules_mapping:
+    some_mod: some_dist
+  pip_repository:
+    name: unused_value
+integrity: unused_value

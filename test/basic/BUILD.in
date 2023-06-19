@@ -1,0 +1,4 @@
+# gazelle:py_root_dir python
+# gazelle:py_repo_name_prefix pip_
+# gazelle:py_internal_module_list_path internal_modules.txt
+# gazelle:py_external_module_map_path external_modules.tsv

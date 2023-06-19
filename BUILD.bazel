@@ -1,0 +1,17 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# Gazelle configuration options.
+# See https://github.com/bazelbuild/bazel-gazelle#running-gazelle-with-bazel
+# gazelle:prefix github.com/siddharthab/bazel-gazelle-python
+# gazelle:exclude bazel-out
+gazelle(name = "gazelle")
+
+gazelle(
+    name = "gazelle_update_repos",
+    args = [
+        "-from_file=go.mod",
+        "-to_macro=deps.bzl%gazelle_deps",
+        "-prune",
+    ],
+    command = "update-repos",
+)

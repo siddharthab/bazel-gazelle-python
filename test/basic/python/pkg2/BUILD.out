@@ -1,0 +1,14 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+
+py_binary(
+    name = "baz",
+    srcs = ["baz.py"],
+    imports = "..",
+    main = "baz.py",
+    tags = ["py-gazelle-managed"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//python/pkg1",
+        "@pip_urllib3//:pkg",
+    ],
+)

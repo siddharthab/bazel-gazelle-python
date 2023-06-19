@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "internal",
+    srcs = ["modules.go"],
+    importpath = "github.com/siddharthab/bazel-gazelle-python/internal",
+    visibility = ["//:__subpackages__"],
+)
+
+go_test(
+    name = "internal_test",
+    srcs = ["modules_test.go"],
+    embed = [":internal"],
+)
